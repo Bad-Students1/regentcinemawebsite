@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Regent Cinema — Ashburton</title>
+<meta name="description" content="The Regent Cinema, Wills Street, Ashburton. Two screens, family-run, showing the latest movies every day.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%230a0a0f%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23e7b24a%22 font-family=%22Georgia,serif%22>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,500;1,6..96,600&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+<script src="Javascirpt/index.js" defer></script>
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header">
+  <div class="container nav-row">
+    <a href="#home" class="logo" aria-label="The Regent Cinema home">
+      <svg class="logo-badge" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" stroke="#e7b24a" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="23" stroke="#e7b24a" stroke-width="1"/>
+        <circle cx="32" cy="32" r="4" fill="#e7b24a"/>
+        <circle cx="32" cy="11" r="3" fill="#e7b24a"/>
+        <circle cx="50" cy="22" r="3" fill="#e7b24a"/>
+        <circle cx="50" cy="42" r="3" fill="#e7b24a"/>
+        <circle cx="32" cy="53" r="3" fill="#e7b24a"/>
+        <circle cx="14" cy="42" r="3" fill="#e7b24a"/>
+        <circle cx="14" cy="22" r="3" fill="#e7b24a"/>
+      </svg>
+      <span class="logo-text">
+        <span class="regent">Regent</span>
+        <span class="div"></span>
+        <span class="cinema">CINEMA</span>
+      </span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#now-showing">Now Showing</a>
+      <a href="#kids-corner">Kids Corner</a>
+      <a href="#coming-soon">Coming Soon</a>
+      <a href="#events">Events</a>
+      <a href="#film-society">Film Society</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="tel:+6433081230" class="nav-tel">Movieline 03 308 1230</a>
+      <a class="btn btn-primary" href="mailto:bookings@regentcinema.co.nz?subject=A%20Booking%20via%20Website">
+        Book Tickets
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" id="closeMenu" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <a href="#home">Home</a>
+  <a href="#now-showing">Now Showing</a>
+  <a href="#kids-corner">Kids Corner</a>
+  <a href="#coming-soon">Coming Soon</a>
+  <a href="#events">Events</a>
+  <a href="#film-society">Film Society</a>
+  <a href="#location">Location</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-primary" style="font-family:var(--display); font-style:italic; font-size:1.1rem;" href="mailto:bookings@regentcinema.co.nz?subject=A%20Booking%20via%20Website">Book Tickets</a>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <span class="beam b1"></span>
+    <span class="beam b2"></span>
+    <div class="bulb-strip top" id="bulbsTop"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow" style="justify-content:center;">Wills Street · Ashburton</p>
+      <h1>The home of <em>film</em><br>in Ashburton</h1>
+      <p class="sub">Two screens, one family-run theatre, showing the latest releases every day of the week — the way going to the pictures should feel.</p>
+      <div class="cta-row">
+        <a href="#now-showing" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4l14 8-14 8V4z"/></svg>
+          Tonight's Sessions
+        </a>
+        <a href="tel:+6433081230" class="btn btn-ghost">Movieline · 03 308 1230</a>
+      </div>
+    </div>
+
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker" id="heroTicker"></div>
+    </div>
+
+    <div class="stat-row reveal">
+      <div class="stat"><div class="num">2</div><div class="lbl">Screens</div></div>
+      <div class="stat"><div class="num">7</div><div class="lbl">Days a week</div></div>
+      <div class="stat"><div class="num">Wills St</div><div class="lbl">Ashburton</div></div>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <!-- ============ NOW SHOWING ============ -->
+  <section class="ns-section section-pad" id="now-showing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">On screen this week</p>
+        <h2>Now Showing</h2>
+        <p>Browse the full week's lineup day by day. Ratings are colour-coded so you can pick the right session at a glance.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Day of the week" id="weekTabs"></div>
+
+      <div class="movie-grid reveal" id="movieGrid"></div>
+
+      <div class="ns-foot reveal">
+        <p id="dateLabel"></p>
+        <a class="btn btn-ghost" href="https://www.regentcinema.co.nz/images/timetable.pdf">Download full timetable (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <!-- ============ KIDS CORNER ============ -->
+  <section class="kids section-pad" id="kids-corner">
+    <div class="container kids-grid">
+      <div class="reveal">
+        <p class="eyebrow" style="color:var(--marquee-soft);">For the little ones</p>
+        <h2>Kids Corner</h2>
+        <p>Family and school-holiday friendly picks currently on screen — all G and PG sessions, pulled straight from this week's timetable.</p>
+        <div class="cta-row" style="margin-top:26px;">
+          <a href="#contact" class="btn btn-primary">Ask about group bookings</a>
+        </div>
+      </div>
+      <div class="kid-picks reveal" id="kidPicks"></div>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <!-- ============ COMING SOON ============ -->
+  <section class="section-pad" id="coming-soon">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">On the marquee soon</p>
+        <h2>Coming Soon</h2>
+        <p>New titles are added to the timetable every week. Here's a taste of what's heading to Wills Street — confirm exact dates closer to release.</p>
+      </div>
+
+      <div class="soon-strip reveal">
+        <div class="soon-card"><span class="ribbon">New release</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          <div><h4>Title to be announced</h4><span class="when">Check back weekly</span></div>
+        </div>
+        <div class="soon-card"><span class="ribbon">Family</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          <div><h4>Title to be announced</h4><span class="when">School holidays</span></div>
+        </div>
+        <div class="soon-card"><span class="ribbon">Limited season</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          <div><h4>Title to be announced</h4><span class="when">Dates TBC</span></div>
+        </div>
+        <div class="soon-card"><span class="ribbon">Event screening</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          <div><h4>Title to be announced</h4><span class="when">Dates TBC</span></div>
+        </div>
+      </div>
+
+      <div class="soon-cta reveal">
+        <p>Want next week's lineup before anyone else in Ashburton? Get it straight to your inbox.</p>
+        <a class="btn btn-primary" href="https://regentcinema.co.nz/newsletter">Subscribe to the newsletter</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <!-- ============ EVENTS + FILM SOCIETY ============ -->
+  <section class="section-pad" id="events">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Beyond the regular sessions</p>
+        <h2>Events &amp; Film Society</h2>
+        <p>The Regent isn't just first-run releases — the theatre also hosts private functions and a regular programme of independent and world cinema.</p>
+      </div>
+
+      <div class="twocol reveal">
+        <div class="info-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></div>
+          <h3>Events &amp; Private Functions</h3>
+          <p>Birthdays, fundraisers, school groups and corporate screenings — hire a screen for your own event, complete with candy bar and your choice of film.</p>
+          <a class="link" id="eventsEnquiry" href="mailto:bookings@regentcinema.co.nz?subject=Private%20Function%20Enquiry">Enquire about a private screening →</a>
+        </div>
+        <div class="info-card" id="film-society">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+          <h3>Film Society</h3>
+          <p>A regular programme of independent, world and classic cinema for Ashburton's film-lovers, screened outside the usual blockbuster timetable.</p>
+          <a class="link" href="tel:+6433071230">Call 03 307 1230 for current session dates →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <!-- ============ LOCATION ============ -->
+  <section class="section-pad" id="location">
+    <div class="container loc-grid">
+      <div class="reveal">
+        <p class="eyebrow">Find us</p>
+        <h2>Our Location</h2>
+        <div class="loc-card" style="margin-top:24px;">
+          <iframe class="loc-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=235%20Wills%20Street%2C%20Ashburton%207700%2C%20New%20Zealand&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            title="Map to The Regent Cinema, Wills Street, Ashburton"></iframe>
+        </div>
+        <p style="margin-top:10px;"><a class="link" style="font-family:var(--mono); font-size:0.8rem; color:var(--marquee); border-bottom:1px solid rgba(231,178,74,.4);" href="https://maps.google.com/maps?q=235+Wills+Street,+Ashburton+7700,+New+Zealand" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+        <div class="loc-photo-row">
+          <img src="images/cinema-exterior.jpg" alt="The Regent Cinema building on Wills Street, Ashburton" style="width:100%;">
+        </div>
+      </div>
+
+      <div class="loc-details reveal">
+        <h3 style="font-size:1.4rem; color:var(--cream); font-style:italic;">Getting here</h3>
+        <dl>
+          <dt>Address</dt><dd>235 Wills Street, Ashburton 7700, New Zealand</dd>
+          <dt>Parking</dt><dd>Free on-street parking directly outside and around Wills Street.</dd>
+          <dt>Hours</dt><dd>Open daily for scheduled sessions — see Now Showing above for today's first and last screening.</dd>
+          <dt>Accessibility</dt><dd>Ground-floor access to both cinemas. Call ahead and we're happy to help with any specific needs.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="filmstrip"></div>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section-pad" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Contact Us</h2>
+        <p style="color:var(--cream-dim); margin-top:14px;">Questions about sessions, group bookings or hiring a screen — reach us any of the ways below.</p>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><h4>Office</h4><a href="tel:+6433071230">03 307 1230</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4l14 8-14 8V4z"/></svg></div>
+            <div><h4>Movieline (session times)</h4><a href="tel:+6433081230">03 308 1230</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+            <div><h4>Email</h4><a href="mailto:bookings@regentcinema.co.nz">bookings@regentcinema.co.nz</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4>Address</h4><p>235 Wills Street, Ashburton 7700</p></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="form-card reveal" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required></div>
+          <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field full"><label for="cf-subject">Subject</label><input id="cf-subject" name="subject" type="text" placeholder="e.g. Group booking, school holidays"></div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send message</button>
+        <p class="form-note">This opens your email app with the message pre-filled, addressed to bookings@regentcinema.co.nz.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<div class="bulb-strip standalone" id="bulbsBottom" style="background:var(--void-deep); padding:10px 0;"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-about">
+      <a href="#home" class="logo">
+        <svg class="logo-badge" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" stroke="#e7b24a" stroke-width="1.5"/>
+          <circle cx="32" cy="32" r="4" fill="#e7b24a"/>
+        </svg>
+        <span class="logo-text"><span class="regent">Regent</span><span class="div"></span><span class="cinema">CINEMA</span></span>
+      </a>
+      <p>Ashburton's family-run, two-screen cinema on Wills Street — run by David &amp; Donna Favel, showing the latest releases every day, plus film society nights and private functions.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/p/Regent-Cinema-100057273315403/" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#now-showing">Now Showing</a></li>
+        <li><a href="#kids-corner">Kids Corner</a></li>
+        <li><a href="#coming-soon">Coming Soon</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h5>Visit</h5>
+      <ul>
+        <li><a href="#location">Our Location</a></li>
+        <li><a href="#film-society">Film Society</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+6433071230">03 307 1230</a></li>
+        <li><a href="tel:+6433081230">Movieline 03 308 1230</a></li>
+        <li><a href="mailto:bookings@regentcinema.co.nz">bookings@regentcinema.co.nz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> The Regent Cinema, Ashburton. All rights reserved.</p>
+    <p>235 Wills Street, Ashburton 7700, New Zealand</p>
+  </div>
+</footer>
+
+</body>
+</html>

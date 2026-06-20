@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regent Cinema — Schedule Manager</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,600;1,6..96,500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+<script src="Javascirpt/admin.js" defer></script>
+
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand"><em>Regent</em> <span class="tag">Schedule Manager</span></div>
+    <a class="back" href="index.html">← Back to website</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ STEP 1: API KEY ============ -->
+  <div class="card">
+    <h2><span class="step-num">1</span>Connect to the movie database</h2>
+    <p class="sub">This tool looks up real movie titles, posters and ratings for you automatically using TMDB (The Movie Database) — a free service made for exactly this. You only have to do this once.</p>
+
+    <div class="key-status"><span class="dot" id="keyDot"></span><span id="keyStatusText">No API key saved yet</span></div>
+
+    <label for="apiKey">TMDB API key (v3 auth)</label>
+    <div class="row">
+      <div><input type="password" id="apiKey" placeholder="Paste your key here"></div>
+      <button class="btn-primary btn-small" id="saveKeyBtn">Save key</button>
+    </div>
+
+    <details>
+      <summary>I don't have a key yet — how do I get one?</summary>
+      <ol style="margin-top:10px;">
+        <li>Go to <a href="https://www.themoviedb.org/signup" target="_blank" rel="noopener">themoviedb.org/signup</a> and create a free account.</li>
+        <li>Once logged in, go to your account <strong>Settings → API</strong> (or visit <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener">themoviedb.org/settings/api</a>).</li>
+        <li>Click "Request an API Key", choose "Developer", and fill in the short form (you can put "personal cinema website" as the use case).</li>
+        <li>Copy the key labelled <strong>"API Key (v3 auth)"</strong> — it's a long string of letters and numbers — and paste it above.</li>
+      </ol>
+      <p style="font-size:0.85rem; color:var(--cream-dim);">It's free and only takes a couple of minutes. This key stays saved in this browser only — it's never sent anywhere except to TMDB.</p>
+    </details>
+  </div>
+
+  <!-- ============ STEP 2: FIND A MOVIE ============ -->
+  <div class="card">
+    <h2><span class="step-num">2</span>Find a movie</h2>
+    <p class="sub">Search by title (easiest), or paste a TMDB ID / IMDb ID (starts with "tt") if you already have one.</p>
+
+    <label for="searchTitle">Search by title</label>
+    <div class="row">
+      <div><input type="text" id="searchTitle" placeholder="e.g. Toy Story 5"></div>
+      <button class="btn-primary btn-small" id="searchBtn">Search</button>
+    </div>
+    <div class="results" id="searchResults"></div>
+
+    <details style="margin-top:18px;">
+      <summary>Or look up by ID instead</summary>
+      <div class="row" style="margin-top:12px;">
+        <div><input type="text" id="idInput" placeholder="e.g. 1234 (TMDB) or tt1234567 (IMDb)"></div>
+        <button class="btn-ghost btn-small" id="idLookupBtn">Look up</button>
+      </div>
+    </details>
+
+    <div class="msg" id="searchMsg"></div>
+
+    <!-- ===== Selected movie preview ===== -->
+    <div class="preview" id="previewBlock" style="display:none;">
+      <img id="previewPoster" src="" alt="">
+      <div class="fields">
+        <label>Title</label>
+        <input type="text" id="fTitle">
+
+        <label>NZ classification (please confirm — TMDB's suggestion may not be NZ-specific)</label>
+        <select id="fRating">
+          <option value="G">G</option>
+          <option value="PG">PG</option>
+          <option value="M">M</option>
+          <option value="R13">R13</option>
+          <option value="R16">R16</option>
+          <option value="R18">R18</option>
+        </select>
+        <p class="source-note" id="ratingSource"></p>
+
+        <label>Content warning (optional, e.g. "Violence & offensive language")</label>
+        <input type="text" id="fWarn" placeholder="Leave blank if none">
+
+        <label>Poster image (filled in automatically from TMDB)</label>
+        <input type="text" id="fPoster" readonly>
+
+        <label>Which days is it screening?</label>
+        <div class="days-grid" id="dayChecks"></div>
+
+        <label>Times (comma-separated, applies to every day ticked above — e.g. 6:00pm, 8:15pm)</label>
+        <input type="text" id="fTimes" placeholder="e.g. 6:00pm, 8:15pm">
+
+        <button class="btn-primary" id="addToScheduleBtn">Add to schedule</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STEP 3: THIS WEEK'S SCHEDULE ============ -->
+  <div class="card">
+    <h2><span class="step-num">3</span>This week's schedule</h2>
+    <p class="sub">Everything you've added so far. You can tweak times or ratings directly here, or remove a session entirely.</p>
+    <div id="weekSchedule"></div>
+    <button class="btn-ghost btn-small" id="clearAllBtn" style="margin-top:10px;">Clear entire schedule</button>
+  </div>
+
+  <!-- ============ STEP 4: PUBLISH ============ -->
+  <div class="card">
+    <h2><span class="step-num">4</span>Update your website</h2>
+    <p class="sub">When you're happy with the week above, generate the updated file and upload it to replace the one on your website.</p>
+    <button class="btn-primary" id="generateBtn">Generate updated website file</button>
+    <div class="msg" id="publishMsg"></div>
+    <details id="fallbackDetails" style="display:none;">
+      <summary>Manual copy-paste method (use this if the download didn't work)</summary>
+      <p style="margin-top:10px; font-size:0.88rem; color:var(--cream-dim);">Copy the code below, open <code>index.html</code> in a text editor, and replace everything between the lines <code>/* ===SCHEDULE_START=== */</code> and <code>/* ===SCHEDULE_END=== */</code> with it.</p>
+      <textarea id="codeOutput" readonly></textarea>
+      <button class="btn-ghost btn-small" id="copyCodeBtn" style="margin-top:10px;">Copy code</button>
+    </details>
+  </div>
+
+</div>
+
+</body>
+</html>
