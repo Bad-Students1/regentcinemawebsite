@@ -1,3 +1,31 @@
+/* List all of the names of sections here so that we can just use find feature: */
+/* Nav */
+/* Hero image */
+/* General changes eg h1, h2 */
+/* Footer */
+
+/* list colours used here: */
+/*Theme color is #CE3129*/
+
+/* Nav */
+nav{
+    background-color: #151517;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+}
+
+#nav_logo{
+    padding:0px;
+}
+
+.logo_link{
+    height: 68px;
+}
+
 .nav-button{
     background-color: #a80800;
     color:#000;
@@ -16,6 +44,11 @@
     background-color: #610500;
 }
 
+a:visited{
+    color:#000;
+}
+
+/* Hero image */
 #hero_image {
   background-image: url("../images/cinema-exterior.jpg");
   width: 100%;
@@ -29,30 +62,9 @@
   margin-top: 10px;
 }
 
+/* General Changes eg h1, h2 */
 h1{
     font-family: cursive;
-}
-
-.logo_link{
-    height: 68px;
-}
-
-#nav_logo{
-    padding:0px;
-}
-
-a:visited{
-    color:#000;
-}
-
-nav{
-    background-color: #151517;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding:0px;
-    margin:0px;
 }
 
 hr{
@@ -68,4 +80,4 @@ body{
     margin:0px;
 }
 
-/*Theme color is #CE3129*/
+/* Footer */
