@@ -3,6 +3,7 @@
 /* Hero image */
 /* Now showing scroll */
 /* General changes eg h1, h2 */
+/* Showtimes */
 /* Footer */
 
 /* list colours used here: */
@@ -115,6 +116,58 @@ body{
     margin:0px;
     background-color: #262629;
     color: #b1b1b1;
+}
+
+/* Showtimes */
+#movieGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.movie-card{
+    background:#151517;
+    border-radius:12px;
+    overflow:hidden;
+    color:white;
+}
+
+.poster{
+    height:350px;
+    position:relative;
+}
+
+.poster img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:15px;
+}
+
+.rate-pill{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#ce3129;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+}
+
+.times-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.time-chip{
+    background:#262629;
+    padding:8px 12px;
+    border-radius:6px;
 }
 
 /* Footer */
