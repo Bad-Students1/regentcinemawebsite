@@ -188,3 +188,29 @@ document.addEventListener('DOMContentLoaded', () => {
   if (bulbsBottom) buildBulbs(bulbsBottom, 60);
 
 });
+
+/* mailto link for make a booking button */
+document.getElementById("bookingBtn").addEventListener("click", function () {
+
+    const subject = "Booking Inquiry";
+
+    const body =
+`Booking Type (e.g. company, single family, school, small group):
+
+Booking Name (e.g. James):
+
+Amount of Tickets (e.g. 2):
+
+Specific Ages for each ticket (e.g. 16, 35, 56):
+
+Movie Name (e.g. Toy Story 5):
+
+Date and Time (e.g. 15/07/2026 5:20PM):`;
+
+    const mailtoLink =
+        "mailto:bookings@regentcinema.co.nz"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+});

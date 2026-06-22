@@ -10,6 +10,22 @@
    is closed or has nothing on for a day, just leave its list
    empty: [ ]  — the site will show a friendly "nothing on"
    message instead of breaking.
+
+   The setup for these is 
+   { title:"movie name here", rating:"age rating here", warn:"warning for movies here", times:[showtimes here], poster:"link to poster here" }
+    How to set it up
+    movie name here: you will insert the name for the movie here set up by just putting in the movie name for this section e.g. Toy Story 5
+    age rating here: here you will put the age rating in the and what you put will show up (leave blank if you don't want anything) e.g. R16
+    warnings for movies here: Put the warnings that you want to show for the movie e.g Sexual themes, violence
+    showtimes here: Here you will put the movie show times in quotation marks with a comma seperating each one e.g "2:30PM", "5:30PM"
+    link to poster here: Here you will put the directory or web link to the poster that will show for the movie e.g https://movieposterimg.png or /images/posters/poster.png
+
+    Filled out one
+    { title:"Obssesion", rating:"R16", warn:"Violence, horror, sex scenes, offensive language, suicide & content that may disturb", times:["2:30PM", "5:30PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
+    Each one of the above lines are a separate movie on a day and you will seperate them with a comma 
+    { title:"Backrooms", rating:"M", warn:"", times:["2:30PM","7:30PM"], poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" },
+    { title:"Weapons", rating:"R16", warn:"", times:["6:00PM"], poster:"https://image.tmdb.org/t/p/w300/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg" }
+
    ========================================================= */
 /* ===SCHEDULE_START=== */
 const SCHEDULE = {
