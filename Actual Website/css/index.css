@@ -180,6 +180,23 @@ nav{
     border-radius:6px;
 }
 
+#dateLabel{
+    color: white;
+}
+
+.tab{
+    font-family: Audiowide;
+    text-decoration: none;
+    color: white;
+    flex-wrap: wrap;
+    background: none;
+    border: none;
+    padding: 0 50px 0;
+}
+
+.tab:hover{
+    color: grey;
+}
 /* Footer */
 footer{
     background-color: #151517;
