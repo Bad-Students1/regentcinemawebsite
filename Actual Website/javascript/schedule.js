@@ -54,7 +54,8 @@ const SCHEDULE = {
     { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
   ],
   Sunday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
+    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" },
+    { title:"The Life of Big E (Jeffery Epstein)", rating:"2+", warn:"sex scenes", times:["12:00AM","17:38PM"], poster:"" }
   ]
 };
 /* ===SCHEDULE_END=== */
