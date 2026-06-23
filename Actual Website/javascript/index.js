@@ -37,7 +37,7 @@ function renderMovies(dayName){
         <h3>${m.title}</h3>
         <p class="warn">${m.warn}</p>
         <div class="times-row">
-          ${m.times.map(t => `<span class="time-chip">${clockIcon}${t}</span>`).join('')}
+          ${m.times.map(t => `<span class="time-chip">${t}</span>`).join('')}
         </div>
       </div>`;
     grid.appendChild(card);
