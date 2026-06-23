@@ -35,7 +35,7 @@ const SCHEDULE = {
     { title:"Weapons", rating:"R16", warn:"", times:["6:00PM"], poster:"https://image.tmdb.org/t/p/w300/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg" }
   ],
   Tuesday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
+    { title:"Obsession", rating:"R16", warn:"", times:["10:30PM","2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
   ],
   Wednesday: [
     { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" },

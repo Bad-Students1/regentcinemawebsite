@@ -182,16 +182,31 @@ nav{
 
 #dateLabel{
     color: white;
+    text-align: center;
+    padding-top: 70px;
 }
 
-.tab{
-    font-family: Audiowide;
-    text-decoration: none;
-    color: white;
+#weekTabs {
+    display: flex;
+    flex-direction: row;   /* IMPORTANT */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.tab {
+    font-family: Audiowide;
     background: none;
     border: none;
-    padding: 0 50px 0;
+    color: white;
+    padding: 5px 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 .tab:hover{
@@ -202,7 +217,8 @@ footer{
     background-color: #151517;
     color: aliceblue;
     font-family: Audiowide;
-    display: flex;
+    flex-direction: row;
+    display: flex;/* Hi No I did zshare it*/
     justify-content: space-between;
     align-items: center;
     padding: 20px;
