@@ -159,14 +159,18 @@ nav{
 }
 
 .rate-pill{
-    position:absolute;
-    top:10px;
-    left:10px;
-    background:#ce3129;
-    color:white;
-    padding:6px 10px;
-    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    font-weight: bolder;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin:0 auto 12px auto;
+    font-family: sans-serif;
 }
+
 .times-row{
     display:flex;
     gap:10px;
@@ -178,12 +182,14 @@ nav{
     background:#262629;
     padding:8px 12px;
     border-radius:6px;
+    font-family: sans-serif;
 }
 
 #dateLabel{
     color: white;
     text-align: center;
     padding-top: 70px;
+    font-size: 3rem;
 }
 
 #weekTabs {
@@ -196,6 +202,30 @@ nav{
     padding: 10px 0;
 }
 
+.rate-G{
+    background:#2e7d32;
+}
+
+.rate-PG{
+    background:yellow;
+}
+
+.rate-M{
+    background: yellow;
+}
+
+.rate-R13{
+    background:red;
+}
+
+.rate-R16{
+    background:red;
+}
+
+.rate-R18{
+    background:red;
+}
+
 .tab {
     font-family: Audiowide;
     background: none;
@@ -206,11 +236,15 @@ nav{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-decoration: underline;
+    font-size: 1.2rem;
 }
 
-.tab:hover{
+.tab:hover,
+.tab.active{
     color: grey;
+}
+.tab.today{
+    text-decoration: underline;
 }
 /* Footer */
 footer{
