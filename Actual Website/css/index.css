@@ -246,6 +246,15 @@ nav{
 .tab.today{
     text-decoration: underline;
 }
+
+#comingGrid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
 /* Footer */
 footer{
     background-color: #151517;
@@ -253,10 +262,11 @@ footer{
     font-family: Audiowide;
     flex-direction: row;
     display: flex;/* Hi No I did zshare it*/
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
+     justify-content: space-between; 
 }
-.Contact1{
-    font-size: 12px;
+.Contact1,
+#copyright{
+    font-size: 100%;
 }

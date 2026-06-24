@@ -30,32 +30,165 @@
 /* ===SCHEDULE_START=== */
 const SCHEDULE = {
   Monday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" },
-    { title:"Backrooms", rating:"M", warn:"", times:["2:30PM","7:30PM"], poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" },
-    { title:"Weapons", rating:"R16", warn:"", times:["6:00PM"], poster:"https://image.tmdb.org/t/p/w300/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg" }
+    { title:"Obsession",
+      rating:"R16", 
+      warn:"", 
+      times:["2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    },
+
+    { title:"Backrooms", 
+      rating:"M", 
+      warn:"", 
+      times:["2:30PM","7:30PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" 
+    },
+
+    { title:"Weapons", 
+      rating:"R16", 
+      warn:"", 
+      times:["6:00PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg" 
+    }
   ],
   Tuesday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["10:30PM","2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
+    { title:"Obsession", 
+      rating:"R16", 
+      warn:"", 
+      times:["10:30PM","2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    }
   ],
   Wednesday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" },
-    { title:"Backrooms", rating:"M", warn:"", times:["2:30PM","7:30PM"], poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" },
-    { title:"Weapons", rating:"R16", warn:"", times:["6:00PM"], poster:"https://image.tmdb.org/t/p/w300/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg" }
+    { title:"Obsession", 
+      rating:"R16", 
+      warn:"", 
+      times:["2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    },
+    { title:"Backrooms", 
+      rating:"M", 
+      warn:"", 
+      times:["2:30PM","7:30PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" 
+    },
+    { title:"Weapons", 
+      rating:"R16", 
+      warn:"", 
+      times:["6:00PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg" 
+    }
   ],
   Thursday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
+    { title:"Obsession", 
+      rating:"R16", 
+      warn:"", 
+      times:["2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    }
   ],
   Friday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" },
-    { title:"Backrooms", rating:"M", warn:"", times:["2:30PM","7:30PM"], poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" },
-    { title:"Toy Story 5", rating:"G", warn:"", times:["8:00PM"], poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIND99f2yirdCpkogEnIdQtBDEJ3klWI6keME9wCv8w&s=10" }
+    { title:"Obsession", 
+      rating:"R16", 
+      warn:"", 
+      times:["2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    },
+    { title:"Backrooms", 
+      rating:"M", 
+      warn:"", 
+      times:["2:30PM","7:30PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg" 
+    },
+    { title:"Toy Story 5", 
+      rating:"G", 
+      warn:"", 
+      times:["8:00PM"], 
+      poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIND99f2yirdCpkogEnIdQtBDEJ3klWI6keME9wCv8w&s=10" 
+    }
   ],
   Saturday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" }
+    { title:"Obsession", 
+      rating:"R16", 
+      warn:"", 
+      times:["2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    }
   ],
   Sunday: [
-    { title:"Obsession", rating:"R16", warn:"", times:["2:30PM","8:10PM"], poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" },
-    { title:"The Life of Big E (Jeffery Epstein)", rating:"2+", warn:"sex scenes", times:["12:00AM","17:38PM"], poster:"" }
+    { title:"Obsession", 
+      rating:"R16", 
+      warn:"", 
+      times:["2:30PM","8:10PM"], 
+      poster:"https://image.tmdb.org/t/p/w300/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg" 
+    },
+    { title:"The Life of Big E (Jeffery Epstein)", 
+      rating:"2+", 
+      warn:"sex scenes", 
+      times:["12:00AM","17:38PM"], 
+      poster:"" 
+    }
   ]
 };
 /* ===SCHEDULE_END=== */
+
+/* ===COMING_SOON_START=== */
+const COMING_SOON = [
+  {
+    title: "Toy Story 5",
+    rating: "G",
+    warn: "",
+    release: "15 July 2026",
+    poster: "https://i.pinimg.com/474x/1f/84/1c/1f841cbb61a3c4930d39028bff58b34a.jpg   "
+  },
+  {
+    title: "Avatar 3",
+    rating: "M",
+    warn: "Sci-fi violence",
+    release: "22 July 2026",
+    poster: "https://example.com/poster2.jpg"
+  }
+];
+/* ===COMING_SOON_END=== */
+
+function renderComingSoon() {
+  const wrap = document.getElementById('comingGrid');
+  if (!wrap) return;
+
+  wrap.innerHTML = "";
+
+  if (COMING_SOON.length === 0) {
+    wrap.innerHTML = `<p style="color:var(--cream-dim);">No upcoming movies announced yet.</p>`;
+    return;
+  }
+
+  COMING_SOON.forEach(m => {
+    const card = document.createElement('div');
+    card.className = 'movie-card';
+
+    card.innerHTML = `
+      <div class="poster">
+        ${m.poster
+          ? `<img src="${m.poster}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">`
+          : ""}
+      </div>
+
+      <div class="card-body">
+        <h3>${m.title}</h3>
+
+        <span class="rate-pill rate-${m.rating}">${m.rating}</span>
+
+        <p class="warn">${m.warn}</p>
+
+        <p style="font-size:0.9rem; opacity:0.8;">
+          Coming: ${m.release}
+        </p>
+      </div>
+    `;
+
+    wrap.appendChild(card);
+  });
+}
+
+/* init */
+renderComingSoon();
