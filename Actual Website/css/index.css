@@ -8,6 +8,8 @@
 
 /* list colours used here: */
 /*Theme color is #151517*/
+/* Background colour is #26262629 */
+
 
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
@@ -121,14 +123,16 @@ nav{
 */
 
 /* Showtimes */
-#movieGrid{
+#movieGrid,
+#comingGrid{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; /* or flex-start */
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
 }
+
 .movie-card{
     background:#151517;
     border-radius:12px;
@@ -183,18 +187,19 @@ nav{
     padding:8px 12px;
     border-radius:6px;
     font-family: sans-serif;
+    font-weight: bold;
 }
 
-#dateLabel{
-    color: white;
+.movie-section-header{
     text-align: center;
-    padding-top: 70px;
+    padding-top: 100px;
     font-size: 3rem;
+    color: white;
 }
 
 #weekTabs {
     display: flex;
-    flex-direction: row;   /* IMPORTANT */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -203,25 +208,19 @@ nav{
 }
 
 .rate-G{
-    background:#2e7d32;
+    background: green;
 }
 
-.rate-PG{
-    background:yellow;
-}
-
+.rate-PG,
 .rate-M{
-    background: yellow;
+    background:yellow;
 }
 
 .rate-R13{
     background:red;
 }
 
-.rate-R16{
-    background:red;
-}
-
+.rate-R16,
 .rate-R18{
     background:red;
 }
@@ -243,30 +242,19 @@ nav{
 .tab.active{
     color: grey;
 }
+
 .tab.today{
     text-decoration: underline;
 }
 
-#comingGrid{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-}
 /* Footer */
 footer{
     background-color: #151517;
     color: aliceblue;
     font-family: Audiowide;
     flex-direction: row;
-    display: flex;/* Hi No I did zshare it*/
+    display: flex;
     align-items: center;
     padding: 20px;
      justify-content: space-between; 
-}
-.Contact1,
-#copyright{
-    font-size: 100%;
 }

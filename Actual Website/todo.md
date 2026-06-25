@@ -1,1 +1,5 @@
 - [ ] Shoot up the theater
+- [ ] Move nav buttons to other side of the logo 
+- [ ] Make coming soon section
+- [ ] Add some sort of booking button on the time or overall movie card
+- [ ] Break up with Sheldon via text
