@@ -1,94 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="en-NZ">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Regent Cinema — Ashburton</title>
-    <meta name="description" content="The Regent Cinema, Wills Street, Ashburton. Two screens, family-run, showing the latest movies every day.">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" type="image/png" href="images/logo_icon_R.png" id="nav_logo">
-    <script src="javascript/index.js" defer></script>
-    <script src="javascript/schedule.js"></script>
+
+
+<title>The Regent Cinema — Ashburton</title>
+
+<meta
+    name="description"
+    content="The Regent Cinema, Wills Street, Ashburton. Two screens, family-run, showing the latest movies every day."
+>
+
+<link rel="stylesheet" href="css/index.css">
+
+<link
+    rel="icon"
+    type="image/png"
+    href="images/logo_icon_R.png"
+    id="nav_logo"
+>
+
+<!-- Load schedule data first -->
+<script src="javascript/schedule.js"></script>
+
+<!-- Load website functionality after -->
+<script src="javascript/index.js" defer></script>
+
+
 </head>
 
 <body>
-    <header>
-      <nav>
-        
+
+
+<header>
+
+    <nav>
+
         <a class="logo_link" href="#home">
-          <img src="images/logo_rectangle.jpg" alt="Regent Cinema Logo">
+            <img
+                src="images/logo_rectangle.jpg"
+                alt="Regent Cinema Logo"
+            >
         </a>
 
-        
+
         <div class="nav-links">
-          <a class="nav-button" href="#home">Home</a>
-          <a class="nav-button" href="#now-showing">Now Showing</a>
-          <a class="nav-button" href="#coming-up">Coming Up</a>
-          <a class="nav-button" href="#location">Location</a>
-          <a class="nav-button" href="#contact-us">Contact us</a>
-          <a class="nav-button" id="bookingBtn">Make a Booking</a>
+
+            <a class="nav-button" href="#home">
+                Home
+            </a>
+
+            <a class="nav-button" href="#now-showing">
+                Now Showing
+            </a>
+
+            <a class="nav-button" href="#location">
+                Location
+            </a>
+
+            <a class="nav-button" href="#contact-us">
+                Contact us
+            </a>
+
+            <a class="nav-button" id="bookingBtn">
+                Make a Booking
+            </a>
 
         </div>
 
-      </nav>
+    </nav>
 
-    </header>
+</header>
 
-    <hr>
 
-    <main>
-        <div id="hero_image">
-            <h1 id="overlay">Serving Ashburton since 1953</h1>
-        </div>
+<hr>
 
-    </main>
 
-   <!-- <div class="scroll-rule">
-      <div class="ticker">
-      <span>Disclosure Day</span>
-      <span>Glenrothan</span>
-      <span>Michael</span>
-      <span>Obsession</span>
-      <span>Scary Movie 6</span>
-      <span>The Mandalorion and Grogu</span>
-      <span>The Sheep Detectives</span>
-      <span>The Super Mario Movie</span>
-      <span>Toy Story 5</span>
-      </div> -->
-    
+<main>
+
+    <div id="hero_image">
+
+        <h1 id="overlay">
+            Serving Ashburton since 1953
+        </h1>
+
+    </div>
+
+
     <section id="now-showing">
 
-        <h2 class="movie-section-header">Showtimes for this week</h2>
+        <h2 class="movie-section-header">
+            Showtimes for this week
+        </h2>
+
 
         <div id="weekTabs"></div>
+
 
         <div id="movieGrid"></div>
 
     </section>
 
-    <section id="coming-soon">
-      <h2 class="movie-section-header">Coming Soon</h2>
+</main>
 
-      <div id="comingGrid"></div>
-
-    </section>
-
-    <img src="https://i.pinimg.com/474x/1f/84/1c/1f841cbb61a3c4930d39028bff58b34a.jpg">
-
-    </div>  
-</body>
 
 <footer>
-  <div>
-  <p id="copyright">&copy; Regent Cinema</p>
-  </div>
-  <div>
-  <p class="Contact1">Contact us: </p>
-  <p class="Contact1">Phone Number: 03 307 1230</p>
-  <p class="Contact1">Movieline: 03 308 1230</p>
-  <p class="Contact1">Email Address: bookings@regentcinema.co.nz</p>
-  </div>
+
+    <div>
+
+        <p id="copyright">
+            &copy; Regent Cinema
+        </p>
+
+    </div>
+
+
+    <div id="contact-us">
+
+        <p class="Contact1">
+            Contact us:
+        </p>
+
+        <p class="Contact1">
+            Phone Number: 03 307 1230
+        </p>
+
+        <p class="Contact1">
+            Movieline: 03 308 1230
+        </p>
+
+        <p class="Contact1">
+            Email Address: bookings@regentcinema.co.nz
+        </p>
+
+    </div>
+
 </footer>
 
-<html>
-  
+</body>
+
+</html>
