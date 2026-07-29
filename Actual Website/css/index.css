@@ -70,10 +70,12 @@ nav{
     transition: color 0.2s;
     text-decoration: none;
     font-size: 12pt;
+
 }
 
 .nav-button:hover{
     color: #b1b1b1;
+    cursor: pointer;
 }
 
 
